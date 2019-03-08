@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0)
+    
+}
+
+.tytuł {
+    font-size: 40px;
+    font-family: Cinzel;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+nav {
+    background-color: rgb(62, 73, 204);
+    text-align: center;
+    
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    min-height: 45px;
+    text-align: center;
+    line-height: 45px;
+    
+    
+}
+
+.menu > li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px dotted rgb(35, 4, 109);
+
+}
+
+.menu > li:first-child {
+    border-left: 1px dotted rgb(35, 4, 109);
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(19, 2, 59);
+}
+
+.menu a:active {
+    color:rgb(16, 2, 49)
+}
+
+.ja {
+    margin: 5px;
+    border: 1px solid rgb(35, 4, 109);
+    float: left;
+    margin-right: 40px;
+}
+
+p.opis {
+    margin-left: 350px;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+  
+}
+
+q {
+    font-family: "Dancing Script";
+    font-size: 24px;
+}
+
+.quote {
+    text-align: center;
+}
+
+h1.cytat {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    position: relative;
+    
+}
+.podpis {
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+          
+}
+
+
+.main {
+    margin-top: 60px;
+}
+
+.media {
+    width: 100%;
+    height: 155px;
+    text-align: center;
+    background-color: rgb(120, 120, 122);
+    position: relative;
+    top: 150px;
+    
+}
+
+.socialdiv {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.facebook {
+    width: 25%;
+    height: 155px;
+    float: left;
+}
+
+.facebook:hover {
+    background-color: rgb(77, 83, 146);
+}
+
+.snapchat {
+    width: 25%;
+    height: 155px;
+    float: left;
+}
+
+.snapchat:hover {
+    background-color: rgb(207, 235, 52);
+}
+
+.whatsapp {
+    width: 25%;
+    height: 155px;
+    float: left;
+}
+
+.whatsapp:hover {
+    background-color: rgb(26, 185, 39);
+}
+
+.skype {
+    width: 25%;
+    height: 155px;
+    float: left;
+}
+
+.skype:hover {
+    background-color: rgb(59, 132, 243);
+}
+
+.media {
+    clear: both;
+}
+
+.media a:visited {
+    color: black;
+}
+
+.media a:hover {
+    color: black;
+}
+
+.media a:link {
+    color: black;
+}
+
+#nauka, #znajomi {
+    background-color: rgb(191, 191, 194);
+}
+
+p {
+     text-align: justify;
+     padding-left: 50px;
+     padding-right: 50px;
+}
+
+.początek {
+    margin-top: 40px;
+}
+
+ul {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.foto {
+    background-size: cover;
+    float: left;
+}
+
+.fotki{
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.przyjaciółki {
+    margin-top: 50px;
+}
+
+.dziewczyny {
+    padding-bottom: 3px;
+    text-align-last: center;
+}
+
+.p1, .p3 {
+    text-align: right;
+    margin-right: 120px;
+
+}
+
+.p0, .p2, .p4 {
+    margin-left: 120px;
+}
+
+p.p0 {
+    margin-left: 120px;
+}
+
+.p1, .p2 {
+    border: 1px solid rgb(62, 73, 204);
+    display: inline-block;
+}
+
