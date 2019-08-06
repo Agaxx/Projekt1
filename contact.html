@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skontaktuj się ze mną</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="contact">
+        <nav>
+            <i class="fas fa-bars"></i>
+            <ul>
+                <li><a href="index.html">O mnie</a></li>
+                <li><a href="travels.html">Podróże</a></li>
+                <li><a href="contact.html">Kontakt </a></li>
+            </ul>
+        </nav>
+        <div class="title">
+            <h1>Kontakt</h1>
+            <p>Chętnie odpowiem na wszystkie pytania</p>
+            <a class="next" href="#plans">Wyślij wiadomość!</a>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="strip"></div>
+            <section id="plans" class="plans">
+                <h2>Formularz kontaktowy</h2>
+                <p>Piszcie śmiało, na pewno odpowiem na każdą wiadomość!</p>
+
+                <div class="mycontact">
+                    <form>
+                        <div class="form">
+                            <label for="name">Imię </label>
+                            <input type="text" name="name" id="name" placeholder="Agnieszka" required>
+                        </div>
+                        <div class="form">
+                            <label for="email">E-mail </label>
+                            <input type="email" name="email" id="email" placeholder="aga.wyrazik@gmail.com" required>
+                        </div>
+                        <div class="form">
+                            <label for="phone">Numer telefonu</label>
+                            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="721-373-110"
+                                required>
+                        </div>
+                        <div class="form">
+                            <label for="msg">Treść</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </div>
+
+                        <div class="form">
+                            <input class="submit" type="submit" value="Wyślij!">
+                        </div>
+                    </form>
+                    <div class="notform">
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <p>aga.wyrazik@gmail.com</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>721-373-110</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-home"></i>
+                            <p>Ul. Wietrzna 18/15
+                                <br/>
+                                53-024 Wrocław
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+    
+        </article>
+    </main>
+    <footer>
+        <div class="media">
+            <div class="socialdiv">
+                <div class="facebook">
+                    <a href="https://www.facebook.com/aga.wyrazik1" target="_blank"
+                        title="Nazwa użutkownika: Aga Wyrazik"><i class="icon-facebook"></i></a>
+                </div>
+                <div class="snapchat">
+                    <a href="https://www.snapchat.com/" target="_blank" title="Nazwa użytkownika: nieeszka"><i
+                            class="icon-snapchat-ghost"></i></a>
+                </div>
+                <div class="whatsapp">
+                    <a href="https://web.whatsapp.com/" target="_blank"
+                        title="Nazwa użytkownika: Aga Wyrazik (721373110)"><i class="icon-whatsapp"></i></a>
+                </div>
+                <div class="skype">
+                    <a href="https://web.skype.com/" target="_blank" title="Nazwa użytkownika: aga.wyrazik"><i
+                            class="icon-skype-outline"></i></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

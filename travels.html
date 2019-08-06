@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moje podróże</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="travels">
+         <nav>
+             <i class="fas fa-bars"></i>
+             <ul>
+                 <li><a href="index.html">O mnie</a></li>
+                 <li><a href="travels.html">Podróże</a></li>
+                 <li><a href="contact.html">Kontakt </a></li>
+             </ul>
+         </nav>
+        <div class="title">
+            <h1>Moje podróże</h1>
+            <h1 class="cytat"><q>Podróżować to żyć</q><span class="podpis">- H. Ch. Andersen</span></h1>
+            <a class="next" href="#plans">Zaplanowane</a>
+            <a class="previous" href="#done">Zrealizowane</a>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="strip"></div>
+            <section id="plans" class="plans">
+                <h2>Planowane podróże</h2>
+                <p>W wolnych chwilach planuję kolejne podróże. Dwie są już w kolejce do realizacji!</p>
+                <div class="min-gallery">
+                    <div class="filter">
+                        <div class="overflow">
+                            <img src="images/gruzja.jpg" alt="Gruzja">
+                        </div>
+                        <p>Gruzja - grudzień 2019</p>
+                    </div>
+                    <div class="filter">
+                        <div class="overflow">
+                            <img src="images/australia.jpg" alt="Australia">
+                        </div>
+                        <p>Australia - kwiecień 2020</p>
+                    </div>
+                </div>
+            </section>
+            <section id="done" class="done">
+                <h2>Zrealizowane ostatnio</h2>
+                <p>Uwielbiam podróże, dlatego, jeśli tylko mam czas staram się gdzieś pojechać. Poniżej trzy z moich ostatnich podróży - Maroko, Islandia i Francja! </p>
+                <div class="latest-gallery">
+                    <figure class="new">
+                        <div class="black">
+                            <img src="images/oman.jpg" alt="Oman">
+                            <div class="black-over">
+                                <figcaption>Oman</figcaption>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="new">
+                        <div class="black">
+                            <img src="images/islandia.jpg" alt="Islandia">
+                            <div class="black-over">
+                                <figcaption>Islandia</figcaption>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="new">
+                        <div class="black">
+                            <img src="images/dubaj.jpg" alt="Zjednoczone Emiraty Arabskie">
+                            <div class="black-over">
+                                <figcaption>Zjednoczone Emiraty Arabskie</figcaption>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+            <br /><br /><br /><br />
+            <section id="map" class="map">
+                <div class="map">
+                </div>
+                <script> 
+                  function initMap() {
+                  var location = { lat: 44.325, lng: 14.022 };
+
+                  var map = new google.maps.Map(document.getElementById("map"), {
+                  zoom: 3,
+                  center: location,
+
+                  styles: [
+                  {elementType: 'geometry', stylers: [{color: '#1d2c4d'}]},
+                  {elementType: 'labels.text.fill', stylers: [{color: '#8ec3b9'}]},
+                  {elementType: 'labels.text.stroke', stylers: [{color: '#1a3646'}]},
+{
+featureType: 'administrative',
+elementType: 'geometry.stroke',
+stylers: [{color: '#4b6878'}]
+},
+{
+featureType: 'administrative.land_parcel',
+elementType: 'geometry.stroke',
+stylers: [{color: '#dcd2be'}]
+},
+{
+featureType: 'administrative.land_parcel',
+elementType: 'labels.text.fill',
+stylers: [{color: '#64779e'}]
+},
+{
+featureType: 'landscape.natural',
+elementType: 'geometry',
+stylers: [{color: '#023e58'}]
+},
+{
+featureType: 'poi',
+elementType: 'geometry',
+stylers: [{color: '"#283d6a'}]
+},
+{
+featureType: 'poi',
+elementType: 'labels.text.fill',
+stylers: [{color: '#6f9ba5'}]
+},
+{
+featureType: 'poi.park',
+elementType: 'geometry.fill',
+stylers: [{color: '#023e58'}]
+},
+{
+featureType: 'poi.park',
+elementType: 'labels.text.fill',
+stylers: [{color: '#3C7680'}]
+},
+{
+featureType: 'road',
+elementType: 'geometry',
+stylers: [{color: '#304a7d'}]
+},
+{
+featureType: 'road.arterial',
+elementType: 'geometry',
+stylers: [{color: '#fdfcf8'}]
+},
+{
+featureType: 'road.highway',
+elementType: 'geometry',
+stylers: [{color: '#2c6675'}]
+},
+{
+featureType: 'road.highway',
+elementType: 'geometry.stroke',
+stylers: [{color: '#255763'}]
+},
+{
+featureType: 'road.highway.controlled_access',
+elementType: 'geometry',
+stylers: [{color: '#e98d58'}]
+},
+{
+featureType: 'road.highway.controlled_access',
+elementType: 'geometry.stroke',
+stylers: [{color: '#db8555'}]
+},
+{
+featureType: 'road.local',
+elementType: 'labels.text.fill',
+stylers: [{color: '#806b63'}]
+},
+{
+featureType: 'transit.line',
+elementType: 'geometry',
+stylers: [{color: '#1d2c4d'}]
+},
+{
+featureType: 'transit.line',
+elementType: 'labels.text.fill',
+stylers: [{color: '#8f7d77'}]
+},
+{
+featureType: 'transit.line',
+elementType: 'labels.text.stroke',
+stylers: [{color: '#ebe3cd'}]
+},
+{
+featureType: 'transit.station',
+elementType: 'geometry',
+stylers: [{color: '#dfd2ae'}]
+},
+{
+featureType: 'water',
+elementType: 'geometry.fill',
+stylers: [{color: '#0e1626'}]
+},
+{
+featureType: 'water',
+elementType: 'labels.text.fill',
+stylers: [{color: '#4e6d70'}]
+}
+]
+
+});
+
+var image ='flag.png'
+var image0 ='home.png'
+
+var marker = new google.maps.Marker({
+position: {lat: 31.735171, lng: -6.314849},
+title:"Maroko",
+icon: image
+});
+var marker1 = new google.maps.Marker({
+position: {lat: 51.985541, lng: 19.498443},
+map: map,
+title:"Polska",
+icon: image0
+});
+var marker2 = new google.maps.Marker({
+position: {lat: 46.685244, lng: 2.668663},
+map: map,
+title:"Francja",
+icon: image
+});
+var marker3 = new google.maps.Marker({
+position: {lat: 31.735171, lng: -6.314849},
+map: map,
+title:"Maroko",
+icon: image
+});
+var marker4 = new google.maps.Marker({
+position: {lat: 51.184505, lng: 10.770543},
+map: map,
+title:"Niemcy",
+icon: image
+});
+var marker5 = new google.maps.Marker({
+position: {lat: 49.2158, lng: 15.990701},
+map: map,
+title:"Czechy",
+icon: image
+});
+var marker6 = new google.maps.Marker({
+position: {lat: 48.463813, lng: 19.365156},
+map: map,
+title:"Słowacja",
+icon: image
+});
+var marker7 = new google.maps.Marker({
+position:{lat: 64.32444, lng: 17.554065},
+map: map,
+title:"Szwecja",
+icon: image
+});
+var marker8 = new google.maps.Marker({
+position: {lat: 58.534717, lng: 25.937191},
+map: map,
+title:"Estonia",
+icon: image
+});
+var marker9 = new google.maps.Marker({
+position: {lat: 56.805387, lng: 26.345306},
+map: map,
+title:"Łotwa",
+icon: image
+});
+var marker10 = new google.maps.Marker({
+position: {lat: 64.665041, lng: -18.263571},
+map: map,
+title:"Islandia",
+icon: image
+});
+var marker11 = new google.maps.Marker({
+position: {lat: 45.509036, lng: 16.443344},
+map: map,
+title:"Chorwacja",
+icon: image
+});
+var marker12 = new google.maps.Marker({
+position: {lat: 44.263685, lng: 17.735064},
+map: map,
+title:"Bośnia i Harcegowina",
+icon: image
+});
+var marker13 = new google.maps.Marker({
+position: {lat: 42.377613, lng: 25.266744},
+map: map,
+title:"Bułgaria",
+icon: image
+});
+var marker14 = new google.maps.Marker({
+position: {lat: 39.18415, lng: 21.856041},
+map: map,
+title:"Grecja",
+icon: image
+});
+var marker15 = new google.maps.Marker({
+position: {lat: 23.547362, lng: 54.232204},
+map: map,
+title:"Zjednoczone Emiraty Arabskie",
+icon: image
+});
+var marker16 = new google.maps.Marker({
+position: {lat: 19.45985, lng: 56.16993},
+map: map,
+title:"Oman",
+icon: image
+});
+var marker17 = new google.maps.Marker({
+position: {lat: 41.69411, lng: 44.83368},
+map: map,
+title:"Gruzja",
+icon: image
+});
+var marker18 = new google.maps.Marker({
+position: {lat: 48.20849, lng: 16.37208},
+map: map,
+title:"Austria",
+icon: image
+});
+var marker19 = new google.maps.Marker({
+position: {lat: 47.49801, lng: 19.03991},
+map: map,
+title:"Węgry",
+icon: image
+});
+var marker20 = new google.maps.Marker({
+position: {lat: -33.86785, lng: 151.20732},
+map: map,
+title:"Australia",
+icon: image
+});
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow
+({
+content: ''
+});
+
+}
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8mV6wtPPlmpe6dTTQX6M4ffulLzzqI5w&callback=initMap">
+</script>
+            </section>
+            <br/><br/>
+        </article>
+    </main>
+  <footer>
+      <div class="media">
+          <div class="socialdiv">
+              <div class="facebook">
+                  <a href="https://www.facebook.com/aga.wyrazik1" target="_blank"
+                      title="Nazwa użutkownika: Aga Wyrazik"><i class="icon-facebook"></i></a>
+              </div>
+              <div class="snapchat">
+                  <a href="https://www.snapchat.com/" target="_blank" title="Nazwa użytkownika: nieeszka"><i
+                          class="icon-snapchat-ghost"></i></a>
+              </div>
+              <div class="whatsapp">
+                  <a href="https://web.whatsapp.com/" target="_blank"
+                      title="Nazwa użytkownika: Aga Wyrazik (721373110)"><i class="icon-whatsapp"></i></a>
+              </div>
+              <div class="skype">
+                  <a href="https://web.skype.com/" target="_blank" title="Nazwa użytkownika: aga.wyrazik"><i
+                          class="icon-skype-outline"></i></a>
+              </div>
+              <div style="clear:both"></div>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
